@@ -14,7 +14,7 @@ Slides available via request to ddaiya @ purdue . edu
 
 ## Collaborators
 - Divyanshu Daiya
-- Shyman Jayasundhara
+- Shyaman Jayasundara
 
 ## ⚠️ Strong Disclaimer ⚠️
 **All Purdue University students are hereby warned that directly copying or reproducing any part of our work for academic or research purposes constitutes plagiarism. Such an act will result in an 'F' grade and potential suspension. You are encouraged to use our work as a reference or for inspiration, but direct replication is strictly prohibited. Ensure academic integrity at all times.**
