@@ -7,6 +7,11 @@ This repository contains ongoing work for the project titled "Using Diffusion Mo
 - `Presentation/Demonstration`: Features a recorded video demonstrating the project.
 - `Results`: Holds the results for both the DDPM and NetFlow models.
 
+Presentation link:
+https://www.youtube.com/watch?v=lZZNUwKlzV4
+
+Slides available via request to ddaiya @ purdue . edu
+
 ## Collaborators
 - Divyanshu Daiya
 - Shyman Jayasundhara

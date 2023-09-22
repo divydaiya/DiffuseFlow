@@ -1,0 +1,59 @@
+Steps (follow the demo video, the steps for both code are exactly same) :
+
+
+(Before doing any of these steps please refer https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805 on CUDA installation and setup)
+
+1) Extract the zip file for the code you want to run.
+
+2) Go into the extracted folder, then into the Netshare-master_working.
+
+2) Open Terminal Here.
+
+3) Use Following command to install the code,
+
+	You can skip steps a) and b) in case you just directly want to install the code using the pip3 tp your your default python install installtion. We would suggest the use of conda environment.
+
+		# Assuming Anaconda is installed
+		# Create virtual environment if not exists
+	a)conda create --name NetShare python=3.9
+
+		# Activate virtual env
+	b)conda activate NetShare
+
+		#Install the Code
+	c)pip3 install -e NetShare-master/
+
+		# Download SDMetrics package
+	d)git clone https://github.com/netsharecmu/SDMetrics_timeseries
+	
+		# Installl it
+	e)pip3 install -e SDMetrics_timeseries/ 
+
+
+4) For running the code, 
+
+(CODE Won't work without CUDA enabled, GPU is needed for the computation, since this is computationally intensive on CPU.)
+
+
+	a) Assuming you are currently in directory Netshare-master_working, now open terminal and  use this command to change directory in terminal,
+
+	  	cd NetShare-master/examples/netflow
+
+	b) In file explorer assuming that you are in the Netshare-master_working directory, open the  NetShare-master Directory, and
+
+		Delete the Results folder in there.
+		(previous results needs to removed before running a new instance of code.) 
+
+  	c) For running the code,
+
+  		python driver.py 
+
+
+Note: The second code(our Extension DDPM) is more computationally intensive and will crash on many instances due to memory/CPU overload, might need to run 4-5 times for generating complete response.
+
+Our modified code(w.r.t. Netshare) for the extension(DDPM) can be found in,
+
+\DDPM_based_flow_gen\NetShare-master_working\NetShare-master\netshare\models\doppelganger_torch\doppelganger.py
+\DDPM_based_flow_gen\NetShare-master_working\NetShare-master\netshare\models\doppelganger_torch\network.py
+
+Thank you :)
